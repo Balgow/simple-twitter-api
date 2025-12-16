@@ -10,7 +10,7 @@ from app import create_app
 load_dotenv()
 
 # Get configuration from environment or default to development
-config_name = os.getenv('FLASK_ENV', 'development')
+config_name = os.getenv('ENV', 'development')
 app = create_app(config_name)
 
 if __name__ == '__main__':

@@ -23,7 +23,7 @@ RESTful API service for retrieving Twitter/X data. Built with **Python 3.11+ and
 
 ```bash
 git clone <repository-url>
-cd anymind-twitter-api
+cd simple-twitter-api
 python3 -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
@@ -133,7 +133,7 @@ curl http://localhost:5000/users/twitter?limit=10
 ### Project Structure
 
 ```
-anymind-twitter-api/
+simple-twitter-api/
 ├── app/
 │   ├── __init__.py           # FastAPI app factory
 │   ├── models/
@@ -263,14 +263,5 @@ uvicorn run:app --host 0.0.0.0 --port 8000 --workers 4
 
 # Or using the run script
 export PORT=8000
-export FLASK_ENV=production
 python run.py
 ```
-
-## License
-
-This project is created for the AnyMind Group technical assessment.
-
-## Author
-
-Developed for the Python Engineer position application at AnyMind Group.
